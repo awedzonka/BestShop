@@ -36,7 +36,6 @@ body {
 }
 
 .header {
-    position: sticky;
     display: flex;
     justify-content: center;
     top: 0;
@@ -225,7 +224,8 @@ body {
 
 .benefits-article {
     width: 1124px;
-    height: 100vh;
+    /*height: 100vh;*/
+    /*TODO pytanie*/
     margin: 105px 251px;
     display: grid;
     grid-row-gap: 37px;
@@ -324,7 +324,6 @@ body {
     max-width: 70%;
 }
 
-
 .article-text {
     font-family: var(--font-Open);
     font-size: 16px;
@@ -404,28 +403,158 @@ body {
     bottom: 0;
 }
 
-.pricing .container{
+.pricing .container {
+    margin: 0 auto;
+    width: 1266px;
+    height: 616px;
+}
 
+.pricing-header {
+    font-family: var(--font-Raleway);
+    font-size: 36px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.pricing-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.pricing-box {
+    width: 372px;
+    height: 467px;
+    margin-top: 60px;
+    margin-bottom: 42px;
+    text-align: center;
+    /*vertical-align: center;*/
+    border-radius: 18px;
+    position: relative;
+}
+
+.pricing-box1 {
+    border: 1px solid var(--color-redish);
+}
+
+.pricing-box2 {
+    border: 1px solid var(--color-primary);
+    padding: 15px 16px;
+    box-sizing: content-box;
+    transform: translate(0, -20px);
+    box-shadow: 5px 10px 27px #07ACE629;
+}
+
+.pricing-box3 {
+    border: 1px solid var(--color-green);
+}
+
+.pricing-nav {
+}
+
+.pricing-title {
+    font-family: var(--font-Raleway);
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 34px;
+}
+
+.pricing-price {
+    font-family: var(--font-Open);
+    font-size: 46px;
+    margin-top: 20px;
+    height: 70px;
+}
+
+.pricing-price1 {
+    color: var(--color-redish);
+}
+
+.pricing-price2 {
+    color: var(--color-primary);
+}
+
+.pricing-price3 {
+    color: var(--color-green);
 }
 
 
-.pricing-box{}
-.pricing-box1{}
-.pricing-box2{}
-.pricing-box3{}
-.pricing-nav{}
-.pricing-title{}
-.pricing-span1{}
-.pricing-span2{}
-.pricing-span3{}
-.pricing-list{}
-.pricing-el{}
-.pricing-btn{}
-.pricing-btn1{}
-.pricing-btn2{}
-.pricing-btn3{}
-.pricing-button{}
-.pricing-button1{}
-.pricing-button2{}
-.pricing-button3{}
+.pricing-span1 {
+    display: block;
+    margin-bottom: 40px;
+    font-family: var(--font-Raleway);
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.pricing-span2 {
+    display: block;
+    margin-bottom: 40px;
+    font-family: var(--font-Raleway);
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.pricing-span3 {
+    display: block;
+    margin-bottom: 40px;
+    font-family: var(--font-Raleway);
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.pricing-list {
+    font-family: var(--font-Open);
+    font-size: 14px;
+    line-height: 40px;
+}
+
+.pricing-el {
+}
+.pricing-el::before {
+    content: url("../assets/ckechmark-1.svg");
+   margin-right: 5px;
+}
+
+
+.pricing-el-not-before::before {
+    content: url("../assets/close.svg");
+    height: 11px;
+    width: 11px;
+    }
+
+
+
+
+
+
+.pricing-btn {
+    border-radius: 18px;
+    border: none;
+    padding: 16px 57px;
+    position: absolute;
+    right: 30%;
+    bottom: -5%;
+
+}
+
+.pricing-btn1 {
+    background-color: var(--color-redish);
+}
+
+.pricing-btn2 {
+    background-color: var(--color-primary);
+}
+
+.pricing-btn3 {
+    background-color: var(--color-green);
+}
+
+.pricing-button {
+    font-family: var(--font-Open);
+    font-size: 13px;
+    font-weight: bold;
+    color: var(--color-white);
+    text-decoration: none;
+}
 
