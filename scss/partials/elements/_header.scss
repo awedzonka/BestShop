@@ -1,21 +1,37 @@
 
-.header {
+.header .container {
+  height: 70px;
+  max-width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  background: $color-white;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  opacity: 1;
   top: 0;
 
-    .logo {
-    }
+  .nav-li {
+    display: flex;
+    padding-right: 136px;
 
-    .nav {
-      ul .nav-li {
-        li .nav-li-ul {
-          a .nav-ul-link {
-          }
-        }
+    .nav-li-ul {
+      font-size: 11px;
+      text-transform: uppercase;
+
+      .nav-ul-link {
+        padding: 0 12px 27px 12px;
+        margin-left: 95px;
+        text-decoration: none;
+        color: $color-grey;
+        min-width: 30px;
+        font-weight: bold;
+      }
+
+      .nav-ul-link:hover {
+        color: $color-black;
+        font-weight: bolder;
+        border-bottom: 4px solid $color-primary;
       }
     }
-
+  }
 }
-
-
