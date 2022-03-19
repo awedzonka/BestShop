@@ -1,0 +1,13 @@
+@mixin button ($colorbg, $color){
+  background: $colorbg;
+  box-shadow: 5px 10px 14px #07ACE629;
+  border-radius: 35px;
+  font-family: $font-Open;
+  font-weight: bold;
+  font-size: 13px;
+  padding: 20px 90px;
+  color: $color;
+  align-self: flex-end;
+  display: inline-block;
+  margin-top: 100px
+}

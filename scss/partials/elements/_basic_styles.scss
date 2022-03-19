@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-Open;
+}
+
+.container {
+  max-width: 1352px;
+  margin: 0 auto;
+  //@include notebook {
+  //  width: 100%;
+  //  padding: 0 15px;
+  //}
+}
+
+.logo {
+  font-family: $font-Raleway;
+  font-size: 32px;
+  color: #08A6E4;
+  text-decoration: none;
+  padding-left: 136px;
+}
+
+h1 {
+  font-family: $font-Raleway;
+  font-size: 3rem;
+}
+
+h2 {
+  font-family: $font-Raleway;
+  font-size: 2.25rem;
+}
+
+a {
+  text-decoration: none;
+}

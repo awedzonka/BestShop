@@ -1,0 +1,39 @@
+
+.section {
+  height: 712px;
+  margin: 0 auto;
+  background: url("../assets/background.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+
+  .container {
+    h1 {
+      text-align: center;
+      font-size: 49px;
+      //font-family: $font-Raleway;
+      color: $color-black;
+      text-transform: capitalize;
+      opacity: 1;
+      margin: 130px auto 20px;
+    }
+
+    p.section-text {
+      text-align: center;
+      //font-family: $font-Open;
+      font-size: 16px;
+      opacity: 1;
+      margin-bottom: 38px;
+      line-height: 22px;
+    }
+
+    .section-link {
+      @include link(33%, 1rem, $color-primary)
+    }
+  }
+}
+
+
+
+
+

@@ -1,0 +1,99 @@
+
+.pricing {
+  margin: 0 auto;
+  width: 1266px;
+  height: 616px;
+
+  .pricing-header {
+    font-size: 2.25rem;
+    text-align: center;
+    margin-top: 100px;
+  }
+
+  .pricing-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .pricing-box {
+      width: 372px;
+      height: 467px;
+      margin-top: 60px;
+      margin-bottom: 42px;
+      text-align: center;
+      border-radius: 18px;
+      position: relative;
+
+      .pricing-nav {
+        .pricing-title {
+          @include pricingTitle;
+        }
+
+        .pricing-span1, .pricing-span2, .pricing-span3 {
+          @extend %pricingSpan;
+        }
+      }
+    }
+  }
+}
+
+.pricing-box1 {
+  border: 1px solid $color-redish;
+
+  .pricing-price1 {
+    @include pricingPrice($color-redish);
+  }
+
+  .pricing-btn1 {
+    @include pricingBtn($color-redish);
+  }
+}
+
+.pricing-box2 {
+  border: 1px solid $color-primary;
+  padding: 15px 16px;
+  box-sizing: content-box;
+  transform: translate(0, -20px);
+  box-shadow: 5px 10px 27px #07ACE629;
+
+  .pricing-price2 {
+    @include pricingPrice($color-primary);
+  }
+
+  .pricing-btn2 {
+    @include pricingBtn($color-primary);
+  }
+}
+
+.pricing-box3 {
+  border: 1px solid $color-green;
+
+  .pricing-price3 {
+    @include pricingPrice($color-green);
+  }
+
+  .pricing-btn3 {
+    @include pricingBtn($color-green);
+  }
+}
+
+.pricing-list {
+  font-size: 14px;
+  line-height: 40px;
+}
+
+.pricing-el::before {
+  content: url("../assets/ckechmark-1.svg");
+  margin-right: 5px;
+}
+
+.pricing-el-not-before::before {
+  content: url("../assets/close.svg");
+  height: 11px;
+  width: 11px;
+}
+
+
+
+
+

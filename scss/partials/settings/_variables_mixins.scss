@@ -1,0 +1,106 @@
+$color-primary: #08A6E4;
+$color-primary-shadow: rgba(7, 172, 230, .16);
+$color-redish: #FB3B64;
+$color-green: #55DFB4;
+$color-black: #000000;
+$color-grey: #A5A5A5;
+$color-light-grey: #F7F7F7;
+$color-white: #FFFFFF;
+
+$background-line: 4px, solid;
+
+
+@mixin notebook {
+  @media (max-width: 1352px) {
+    @content;
+  }
+}
+
+@mixin link($width, $fontSize, $color) {
+  display: block;
+  width: $width;
+  margin: 0 auto;
+  text-align: center;
+  font-size: $fontSize;
+  font-weight: bold;
+  background: $color;
+  border-radius: 40px;
+  color: $color-white;
+  padding: 22px 157px;
+  box-shadow: 5px 10px 14px $color-primary-shadow;
+}
+
+@mixin circle($color) {
+  width: 63px;
+  height: 63px;
+  border-radius: 50%;
+  position: relative;
+  background-color: $color;
+}
+
+
+%statisticsNumbers {
+  display: block;
+  text-align: center;
+  font-family: $font-Raleway;
+  font-size: 20px;
+  font-weight: bolder;
+  letter-spacing: 6px;
+  padding: 14px 0 14px 0;
+}
+
+%statisticsFeature {
+  font-family: $font-Raleway;
+  color: $color-grey;
+  font-size: 17px;
+  text-align: center;
+  width: 90%;
+}
+
+%articleTitle {
+  font-family: $font-Raleway;
+  font-size: 36px;
+  max-width: 70%;
+}
+%articleText {
+  font-family: $font-Open;
+  font-size: 16px;
+  margin-top: 30px;
+}
+
+
+@mixin pricingPrice($color) {
+   font-size: 46px;
+  margin-top: 20px;
+  height: 70px;
+  color: $color;
+}
+
+@mixin pricingTitle {
+  font-family: $font-Raleway;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 34px;
+}
+
+%pricingSpan{
+  display: block;
+  margin-bottom: 40px;
+  font-family: $font-Raleway;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+@mixin pricingBtn ($color) {
+  border-radius: 18px;
+  border: none;
+  padding: 16px 57px;
+  position: absolute;
+  right: 30%;
+  bottom: -5%;
+  font-size: 13px;
+  font-weight: bold;
+  color: $color-white;
+  text-decoration: none;
+  background-color: $color;
+}

@@ -1,0 +1,82 @@
+
+.statistics {
+  width: 100%;
+  margin: 0 auto;
+  height: 531px;
+  box-shadow: 0 -5px 80px #00000029;
+
+  .container {
+    h2.statistics-title {
+      font-size: 2.25rem;
+      text-align: center;
+      width: 100%;
+      display: inline-block;
+      margin-top: 100px;
+      margin-bottom: 145px;
+    }
+
+    .statistics-content {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 121px;
+      gap: 5rem;
+
+      .statistics-column {
+        max-width: 160px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .statistics-circle1 {
+          @include circle($color-redish);
+
+          &::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            background: url("../assets/person.svg") no-repeat center / contain;
+            width: 60px;
+            height: 60px;
+          }
+        }
+
+        .statistics-circle2 {
+          @include circle($color-primary);
+
+          &::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            background: url("../assets/eye.svg") no-repeat center / contain;
+            width: 60px;
+            height: 60px;
+          }
+        }
+
+        .statistics-circle3 {
+          @include circle($color-green);
+          &::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            background: url("../assets/catalog.svg") no-repeat center / contain;
+            width: 60px;
+            height: 60px;
+          }
+        }
+
+        .statistics-numbers {
+          @extend %statisticsNumbers;
+        }
+
+        .statistics-feature {
+          @extend %statisticsFeature;
+        }
+      }
+    }
+  }
+}
+
+
+
+
