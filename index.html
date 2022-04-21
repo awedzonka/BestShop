@@ -1,5 +1,6 @@
 <!doctype html>
-<html lang="en">
+<!--<html lang="en">-->
+<html lang="pl-PL">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -11,12 +12,20 @@
           rel="stylesheet">
     <title>Best Shop</title>
     <link rel="stylesheet" href="css/main.css">
+    <script src="js/app.js"></script>
 </head>
 <body>
 <header class="header">
     <div class="container">
         <a href="/" class="logo">BestShop</a>
         <nav class="nav">
+            <input type="checkbox" class="menu__btn" id="menu__btn">
+            <label for="menu__btn" class="menu__toggle">
+                <span class="span1"></span>
+                <span class="span2"></span>
+                <span class="span3"></span>
+            </label>
+
             <ul class="nav-li">
                 <li class="nav-li-ul"><a href="/" class="nav-ul-link">why us</a></li>
                 <li class="nav-li-ul"><a href="/" class="nav-ul-link">benefits</a></li>
@@ -87,7 +96,7 @@
                     <img src="assets/iphone.png" class="article-img article-img2" alt="">
                 </div>
             </div>
-            <div class="article article3">
+            <div class="article article3" id="article3">
                 <div class="article-box article-box3">
                     <div class="article-box3-add">
                         <h2 class="article-title">Increase recognition your brand</h2>
@@ -156,6 +165,80 @@
     </div>
 </div>
 
+
+<div class="calc">
+    <div class="container">
+        <h2>Calculate how much you’ll pay</h2>
+        <form class="calc-form" id="calc-form">
+            <div class="calc-data-form" id="calc-data-form">
+                <div class="input-form ">
+                    <input type="number" class="input-form-calc" id="product-quantity" placeholder="Products quantity">
+                </div>
+                <div class="input-form ">
+                    <input type="number" class="input-form-calc" id="orders-in-month" placeholder="Estimated orders in month">
+                </div>
+                <div class=" select-choose">
+                    <select name="choose" class="choose open" id="choose-package">
+                        <option value="-1" class="choose-list">Choose package</option>
+                        <option value="basic" class="choose-list">Basic</option>
+                        <option value="professional" class="choose-list">Professional</option>
+                        <option value="premium" class="choose-list">Premium</option>
+                    </select>
+                </div>
+                <label class="calc-form-accounting">
+                    <input type="checkbox" id="accounting" name="accounting">
+                    <span class="span-checked"></span>
+                    <span class="label">Accounting</span>
+                </label>
+                <label class="calc-form-accounting">
+                    <input type="checkbox" id="payment-terminal" name="payment-terminal">
+                    <span class="span-checked"></span>
+                    <span class="label">Rental of a payment terminal</span>
+                </label>
+            </div>
+            <div class="result-data-form" id="result-data-form">
+                <ul>
+                    <li class="list-result-form open" data-id="products" id="li-product">
+                        <span class="item-type">Products</span>
+                        <span class="item-calc">aaa</span>
+                        <span class="price">0</span>
+                    </li>
+                    <li class="list-result-form open" data-id="orders" id="li-orders">
+                        <span class="item-type">Orders</span>
+                        <span class="item-calc">bbb</span>
+                        <span class="price">0</span>
+                    </li>
+                    <li class="list-result-form open" data-id="package" id="li-package">
+                    <span class="item-type">Package</span>
+                    <span class="item-calc">ccc</span>
+                    <span class="price">0</span>
+                    </li>
+                    <li class="list-result-form open" data-id="accounting" id="li-accounting">
+                        <span class="item-type">Accounting</span>
+                        <span class="price">0</span>
+                    </li>
+                    <li class="list-result-form open" data-id="terminal" id="li-terminal">
+                        <span class="item-type">Terminal</span>
+                        <span class="price">0</span>
+                    </li>
+                </ul>
+                <div class="total-price open" id="total-price">
+                    <span>Total</span>
+                    <span class="total-price-result">0</span>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
 <div class="contact">
     <div class="container">
         <div class="contact-container">
@@ -181,9 +264,12 @@
                             <span class="checkbox-span"></span>
                             <p class="checkbox-text">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                Assumenda commodi deleniti dolores dolorum eaque itaque minus repellendus temporibus.
-                                Commodi, delectus dolor hic labore nobis numquam quae reprehenderit sed! Architecto est
-                                explicable magni officia pariatur quod sit totam. Aperiam delectus est, hic laudantium
+                                Assumenda commodi deleniti dolores dolorum eaque itaque minus repellendus
+                                temporibus.
+                                Commodi, delectus dolor hic labore nobis numquam quae reprehenderit sed!
+                                Architecto est
+                                explicable magni officia pariatur quod sit totam. Aperiam delectus est, hic
+                                laudantium
                                 nesciunt non, nostrum odio perferendis quis ratione tempora.
                             </p>
                         </label>
